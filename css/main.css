@@ -15,6 +15,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+  background-color: #fcfcfc;
 }
 
 h1,
@@ -52,6 +53,17 @@ img {
   max-width: 1470px;
   margin: 0 auto;
   padding: 0px 15px;
+}
+
+.section {
+  padding: 40px 0px;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  color: #372e2e;
 }
 
 .header-top {
@@ -320,5 +332,94 @@ img {
 
 .header-bottom .wrapper-cart p .valute {
   opacity: 1;
+}
+
+.cart-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 35px;
+}
+
+.cart-card {
+  width: 330px;
+  height: 340px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 12px 3px rgba(56, 56, 56, 0.05);
+          box-shadow: 0px 0px 12px 3px rgba(56, 56, 56, 0.05);
+  border-radius: 3px;
+  margin-right: 30px;
+  padding: 25px;
+  position: relative;
+}
+
+.cart-card:nth-child(4) {
+  margin-right: 0;
+}
+
+.cart-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 170px;
+}
+
+.cart-product-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #372e2e;
+  margin-top: 15px;
+  position: absolute;
+}
+
+.cart-functions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 80px;
+}
+
+.cart-product-price {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ff9033;
+  display: block;
+}
+
+.cart-product-price span {
+  font-weight: 400;
+}
+
+.cart-add-btn {
+  background-color: #ff9033;
+  border: none;
+  outline: none;
+  display: block;
+  padding: 9px 15px;
+  border-radius: 5px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.cart-add-btn:hover {
+  background-color: #ff841d;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

@@ -17,6 +17,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+  background-color: #fcfcfc;
 }
 h1,
 h2,
@@ -48,6 +49,17 @@ img {
   max-width: 1470px;
   margin: 0 auto;
   padding: 0px 15px;
+}
+
+.section {
+  padding: 40px 0px;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  color: $dark-color;
 }
 
 // HEADER
@@ -82,8 +94,8 @@ img {
             }
           }
 
-          &:nth-child(2){
-              margin-left: 60px;    
+          &:nth-child(2) {
+            margin-left: 60px;
           }
         }
       }
@@ -236,11 +248,84 @@ img {
             opacity: 0.7;
           }
 
-          .valute{
+          .valute {
             opacity: 1;
           }
         }
       }
+    }
+  }
+}
+
+// SECTION NEWS
+
+.cart {
+  &-body {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+  }
+  &-card {
+    width: 330px;
+    height: 340px;
+    background: #ffffff;
+    box-shadow: 0px 0px 12px 3px rgba(56, 56, 56, 0.05);
+    border-radius: 3px;
+    margin-right: 30px;
+    padding: 25px;
+    position: relative;
+
+    &:nth-child(4) {
+      margin-right: 0;
+    }
+  }
+
+  &-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 170px;
+  }
+
+  &-product-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: $dark-color;
+    margin-top: 15px;
+    position: absolute;
+  }
+
+  &-functions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+  }
+
+  &-product-price {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: $first-color;
+    display: block;
+    span {
+      font-weight: 400;
+    }
+  }
+
+  &-add-btn {
+    background-color: $first-color;
+    border: none;
+    outline: none;
+    display: block;
+    padding: 9px 15px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+
+    &:hover {
+      background-color: $second-color;
+      cursor: pointer;
     }
   }
 }
